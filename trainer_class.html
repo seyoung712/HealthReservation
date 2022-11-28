@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<!--<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%> -->
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> 강사 계정 </title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <style>
+        #btn1 {
+            width: 100px;
+            border: 1px;
+            background-color: #C2D68B;
+            padding: 12px 0;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 4px;
+            color: #000000;
+            cursor: pointer;
+        }
+
+        .btn2 {
+            width: 100px;
+            border: 1px;
+            background-color: #9DDCCE;
+            padding: 12px 0;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 4px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        label {
+            display: block;
+            font: 1rem 'Fira Sans', sans-serif;
+        }
+
+        input,
+        label {
+            margin: .4rem 0;
+        }
+    </style>
+</head>
+
+<body width='200%' height='200%'>
+    <center>
+        <table border='1' width='60%' height='1200' bordercolor='#BDBDBD' cellspacing='0'>
+            <tr>
+                <td bgcolor='white' valign='top'>
+                    &nbsp; <a href='./trainer.html'> <img src='./home.jpg' width="50" height='50'> </a>
+
+                           <center>
+                               <br><font size='7'><b> 강사 계정 </b></font> <br><br>
+                               <hr>
+                               <table border='0' align='center' height='70' cellspacing='0'>
+                                   <!-- ??? -->
+                                   <tr align='center'>
+                                       <td width='150'><button class='btn2'><a onclick="window.location.href='trainer_class_create.html'">수업시간 등록</a></button></td>
+                                       <td width='150'><button class='btn2'><a onclick="window.location.href='trainer_info.html'">강사정보</a></button></td>
+                                   </tr>
+                               </table>
+                               <table border='0' align='center' height='70' cellspacing='0'>
+                                   <tr align='center'>
+                                       <td width='150'><button id='btn1'><a onclick="window.location.href='trainer_class.html'">수업시간 확인</a></button></td><!--현재페이지-->
+                                       <td width='150'><button class='btn2'><a onclick="window.location.href='trainer_notice.html'">알림</a></button></td>
+                                   </tr>
+                               </table><!-- 메뉴 -->
+                               <hr>
+                               <br><br>
+
+                               <!-- 예약하기 -->
+
+
+                               <label for="dateselect">날짜를 선택하세요.</label>
+
+                               <!--????? ??¹???-->
+                               <input type="date" id="start" name="trip-start"
+                                      value="2021-06-01"
+                                      min="2021-04-01" max="2021-07-31">
+
+                               <br><br>
+                               
+                                 <table border='1' bordercolor='#BDBDBD' align='center' cellspacing='0'> <!--?????? ???????? ?????, ???? ?ο??? 8?? ?????? ??????? ????? ??? -->
+                                     <tr align='center'  bgcolor='#dbdbdb'>
+                                     <td width='130'><b>시작 시간</b></td>
+                                     <td width='130'><b>종료 시간</b></td>
+                                     <td width='130'><b>최대 인원</b></td> <!--n:n-->
+                                     <td width='130'><b>예약 인원</b></td>
+                                     </tr>
+                                     <tr align='center'>
+                                     <td width='130'></td> <!--DB???? ????ð? ???????? -->
+                                     <td width='130'></td> <!--DB???? ????ð? ???????? -->
+                                     <td width='130'></td> <!--DB???? ????ο?(n:n) ???????? -->
+                                     <td width='130'></td> 
+                                     </tr>
+                
+                                     </tr>
+                                 </table>
+
+
+                           </center>
+
+
+            </td>
+            </tr>
+        </table>
+    </center>
+
+</body>
+</html>
+
+

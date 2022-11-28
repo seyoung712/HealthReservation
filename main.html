@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<!--<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%> -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> 메인화면 </title>
+        <link rel="stylesheet" type="text/css" href="reset.css" />
+        <style>
+        body {
+            height: 100vh;
+            background-image: url("./back.JPG");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background: url("./back.JPG") no-repeat center/cover;
+            opacity: 0.9;
+        }
+        button {
+            width:100px;
+            border: 1px;
+            background-color:#616161;
+            padding: 15px 0;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 4px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        </style>
+    </head>
+
+    <body width='200%' height='200%'>
+        <center><table border = '0' width = '60%' height ='1200' >
+        <tr>
+        <td bgcolor = 'white' valign='top'> 
+  
+            <center> <br><font size='7'><b>헬스장 예약 시스템</b></font> <br><br>
+            <center> <br><font size='5'><b>로그인 화면</b></font> <br><br>
+            <hr>
+            <br><br><br><br><br><br>
+                <!-- 아이디와 비밀번호를 입력받음 -->
+                <table border='1' bordercolor='#BDBDBD' width='500' height='180' cellspacing='0' >
+                    <tr><td align='center' valign='middle'>
+                        <br>
+                        <form method="post" action="login.jsp"> <!--db와 연결-->
+                        <input type="text" name="id" placeholder="아이디 입력"><p> <!--db에 저장된 id-->
+                        <input type="password" name="pw" placeholder="비밀번호 입력"><p> <!--db에 저장된 pw-->
+                        <input type="radio" name="account" value="mem"> 회원 <!--db연동-->
+                        <input type="radio" name="account" value="trn"> 강사 <!--db연동-->
+                        <input type="radio" name="account" value="adm"> 관리자 <!--db연동-->
+                        <br>
+                        <input type=submit value="로그인">    
+                    </form>
+                        <!--<button><a onclick="window.location.href='account.html'"">로그인</a></button> 아이디/비밀번호 일치 시 계정 선택 창으로 이동-->
+                        
+                    </td></tr>
+                </table>            
+            </center>
+        </td>
+        </tr>
+        </table></center>
+    
+    </body>
+</html>

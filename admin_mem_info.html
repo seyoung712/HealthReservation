@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<!--<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%> -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> 관리자계정 </title>
+        <link rel="stylesheet" type="text/css" href="reset.css" />
+        <style>
+        #btn1 {
+            width:100px;
+            border: 1px;
+            background-color:#C2D68B;
+            padding: 12px 0;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 4px;
+            color: #000000;
+            cursor: pointer;
+        }
+        .btn2 {
+            width:100px;
+            border: 1px;
+            background-color:#9DDCCE;
+            padding: 12px 0;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 4px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        </style>
+    </head>
+
+    <body width='200%' height='200%'>
+        <center><table border = '1' width = '60%' height ='1200' bordercolor='#BDBDBD' cellspacing='0'>
+        <tr>
+        <td bgcolor = 'white' valign='top'> 
+            &nbsp; <a href='./member.html'> <img src='./home.jpg' width="50" height='50'> </a> 
+  
+            <center> <br><font size='7'><b> 관리자 계정 </b></font> <br><br>
+            <hr>
+                <table border='0' align='center' height='70' cellspacing='0'>
+                    <tr align='center'>
+                     <td width='150'><button class='btn2'><a onclick="window.location.href='admin_mem_regi.html'">회원등록</a></button></td>
+                     <td width='150'><button id='btn1'><a onclick="window.location.href='admin_mem_info.html'">회원정보</a></button></td> <!--현재 페이지-->
+                     <td width='150'><button class='btn2'><a onclick="window.location.href='admin_mem_tick.html'">수강권부여</a></button></td>
+                     <td width='150'><button class='btn2'><a onclick="window.location.href='admin_mem_atten.html'">출석확인</a></button></td>
+                    </tr>
+                </table >
+                <table border='0' align='center' height='70' cellspacing='0'>
+                    <tr align='center'>
+                     <td width='150'><button class='btn2'><a onclick="window.location.href='admin_mem_inbody.html'">인바디등록</a></button></td>
+                     <td width='150'><button class='btn2'><a onclick="window.location.href='admin_notice.html'">공지등록</a></button></td>
+                     <td width='150'><button class='btn2'><a onclick="window.location.href='admin_trn_regi.html'">강사등록</a></button></td> 
+                     <td width='150'><button class='btn2'><a onclick="window.location.href='admin_trn_info.html'">강사정보</a></button></td>
+                    </tr>
+                </table>
+                <hr>
+                <br><br>
+
+                <table border='1' bordercolor='#BDBDBD' align='center' cellspacing='0'> <!--회원계정에도 표시해주기(회원정보메뉴)-->
+                    <tr align='center'  bgcolor='#dbdbdb'>
+                        <td width='130'><b>회원명</b></td>
+                        <td width='130'><b>회원메일</b></td>
+                        <td width='130'><b>회원아이디</b></td>
+                    </tr>
+                    <tr align='center'>
+                        <td width='130'> </td> <!--DB에서 회원명 가져오기-->
+                        <td width='130'> </td> <!--DB에서 회원메일 가져오기-->
+                        <td width='130'> </td> <!--DB에서 회원아이디 가져오기-->
+                    </tr>
+                
+                    </tr>
+                </table>
+
+        </td>
+    </tr>
+    </table></center>
+
+</body>
+</html>

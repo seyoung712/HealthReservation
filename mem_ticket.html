@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<!--<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%> -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> 회원계정 </title>
+        <link rel="stylesheet" type="text/css" href="reset.css" />
+        <style>
+        #btn1 {
+            width:100px;
+            border: 1px;
+            background-color:#C2D68B;
+            padding: 12px 0;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 4px;
+            color: #000000;
+            cursor: pointer;
+        }
+        .btn2 {
+            width:100px;
+            border: 1px;
+            background-color:#9DDCCE;
+            padding: 12px 0;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 4px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        </style>
+    </head>
+
+    <body width='200%' height='200%'>
+        <center><table border = '1' width = '60%' height ='1200' bordercolor='#BDBDBD' cellspacing='0'>
+        <tr>
+        <td bgcolor = 'white' valign='top'> 
+            &nbsp; <a href='./member.html'> <img src='./home.jpg' width="50" height='50'> </a> 
+  
+            <center> <br><font size='7'><b> 회원 계정 </b></font> <br><br>
+            <hr>
+            <table border='0' align='center' height='70' cellspacing='0'> <!--메뉴-->
+                <tr align='center'>
+                 <td width='150'><button id='btn1'><a onclick="window.location.href='mem_ticket.html'">수강권정보</a></button></td> <!--현재 페이지-->
+                 <td width='150'><button class='btn2'><a onclick="window.location.href='mem_atten.html'">출석확인</a></button></td>
+                 <td width='150'><button class='btn2'><a onclick="window.location.href='mem_info.html'">회원정보</a></button></td>
+                </tr>
+            </table >
+            <table border='0' align='center' height='70' cellspacing='0'>
+                <tr align='center'>
+                 <td width='150'><button class='btn2'><a onclick="window.location.href='mem_reser.html'">예약하기</a></button></td>
+                 <td width='150'><button class='btn2'><a onclick="window.location.href='mem_reser_conf.html'">예약확인</a></button></td>
+                 <td width='150'><button class='btn2'><a onclick="window.location.href='mem_inbody.html'">인바디</a></button></td>
+                 <td width='150'><button class='btn2'><a onclick="window.location.href='mem_notice.html'">알림</a></button></td>
+                </tr>
+            </table> <!-- 메뉴-->
+            <hr>
+            <br><br>
+
+            <table border='1' bordercolor='#BDBDBD' width='400' height='200' cellspacing='0' > <tr><td> <!--수강권-->
+            <table border='0' width='400' height='150' cellspacing='0' >
+                <tr>
+                    <td width='300' align='left' width='500' >
+                    </td>
+                    <td width='100' align='right' >
+                        <b>사용중&nbsp;&nbsp;</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td width='300' align='left' width='500' >
+                        <b>&nbsp;그룹형 PT</b>
+                    </td>
+                    <td width='100' align='right' >
+                    </td>
+                </tr>
+                <tr>
+                    <td width='300' align='left' width='500' >
+                        <font size='2'>&nbsp;&nbsp; 시작일  | </font><!-- 시작일 DB 회원 정보에서 가져오기 -->
+                    </td>
+                    <td width='100' align='right' >
+                    </td>
+                </tr>
+                <tr>
+                    <td width='300' align='left' width='500' >
+                        <font size='2'>&nbsp;&nbsp; 종료일  | </font><!-- 종료일 DB 회원 정보에서 가져오기 -->
+                    </td>
+                    <td width='100' align='right' >
+                    </td>
+                </tr>
+                <tr>
+                    <td width='300' align='left' width='500' >
+                        <font size='2'>&nbsp;&nbsp; 남은 기간  | </font><!-- 남은 기간 DB 회원 정보에서 가져오기 -->
+                    </td>
+                    <td width='100' align='right' >
+                    </td>
+                </tr>
+                <tr>
+                    <td width='300' align='left' width='500' >
+                        <font size='2'>&nbsp;&nbsp; 예약 가능 횟수</font>  | <!-- 예약 가능 횟수 DB 회원 정보에서 가져오기 -->
+                    </td>
+                    <td width='100' align='right' >
+                    </td>
+                </tr>
+                <tr>
+                    <td width='300' align='left' width='500' >
+                        <font size='2'>&nbsp;&nbsp; 취소 가능 횟수</font>  | <!-- 취소 가능 횟수 DB 회원 정보에서 가져오기 -->
+                    </td>
+                    <td width='100' align='right' >
+                    </td>
+                </tr>
+                <tr>
+                    <td width='300' align='left' width='500' >
+                    </td>
+                    <td width='100' align='right' >
+                    </td>
+                </tr>
+            </td></tr> </table>
+            </table> <!--수강권-->
+            
+            
+            </center>
+        </td>
+        </tr>
+        </table></center>
+    
+    </body>
+</html>
